@@ -32,7 +32,7 @@ body {
 .container {
     display: flex;
     width: 100%;
-
+    margin-bottom: 1rem;
 }
 
 .item2 input,
@@ -42,7 +42,6 @@ select,
     width: 100%;
 
 }
-
 input,
 select {
     padding: 0.5rem 0;
@@ -74,4 +73,9 @@ select {
 .rs:hover {
     background-color: #d127c2;
 
+}
+.displayerror{
+    color: red;
+    font-size: small;
+    /* margin-top: -2rem; */
 }
