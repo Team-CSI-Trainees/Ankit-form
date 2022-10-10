@@ -3,10 +3,46 @@
      padding: 0;
 }
 body{
+    display: flex;
+    /* padding: 0 5% 0 ; */
+}
+#itema{
     background-image: url(/img/bg.jpg);
     background-size: 100%;
+    width: 45%;
 }
-h1{
+#itemb{
+    width:40%;
+    margin:5% auto;
+}
+.container2{
+   
+}
+.container{
+    display: flex;
+    width: 100%;
+    
+}
+.item2 input,select,.container div, #gender1{
+    width: 100%;
+   
+}
+input,select{
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.item{
+    margin:0 0 1rem;
+}
+.itemg{
+    margin: 1rem 2rem 1rem 0.5rem;
+}
+/* #reset,#submit{
+    margin: 0 1rem;
+    width: 50%;
+} */
+/* h1{
     font-size: 4rem;
     font-family: 'Titillium Web', sans-serif;
     color: white;
@@ -29,4 +65,4 @@ input{
     display: block;
     margin: auto;
 
-}
+} */
