@@ -34,9 +34,9 @@
             </div>
             <div>
                 <label id="gender1" for="Gender">Gender*</label><br />
-                Male<input class="item itemg" type="radio" name="gender" id="" />
-                Female<input class="item itemg" type="radio" name="gender" id="" />
-                Other<input class="item itemg" type="radio" name="gender" id="" />
+                Male<input class="item itemg" type="radio" name="gender" required/>
+                Female<input class="item itemg" type="radio" name="gender" required/>
+                Other<input class="item itemg" type="radio" name="gender" required/>
             </div>
             <div class="item item2">
                 <label for="Email_Address">Email Address*</label>
@@ -50,8 +50,10 @@
             </div>
             <div>
                 <label for="cousre">Select Course*</label>
-                <select class="item item2" name="course">
-                    <option value="none"></option>
+                <select class="item item2" name="course" required>
+                    <option value="">
+                        
+                    </option>
                     <option value="CSE">Computer Science And Engg.</option>
                     <option value="CSE(AI+ML)">
                         Computer Science And Engg.(AI+ML)
@@ -65,11 +67,13 @@
             </div>
             <div class="item item2">
                 <label for="Password">Password*</label>
-                <input type="password" />
+                <input id="Password" type="password" />
+                <div class="displayerror"></div>
             </div>
             <div class="item item2">
                 <label for="C_Password">Confirm Password*</label>
-                <input type="Password" />
+                <input id="C_Password" type="Password" />
+                <div class="displayerror"></div>
             </div>
             <div class="container">
                 <button class="item rs" type="reset">Reset</button>
