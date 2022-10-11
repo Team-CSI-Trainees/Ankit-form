@@ -7,21 +7,43 @@ body {
     display: flex;
 }
 
+
 .heading {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 4rem;
     text-decoration: underline;
+    color: #b926b9;
 }
 
+
 #itema {
-    background-image: linear-gradient(blue, #ff5472);
-    width: 45%;
+    background-image: url(/img/bg2.jpg);
+     width: 45%;
 }
-#itema div{
+
+#itema a{
+    text-decoration: none;
+}
+
+.logos{
+    border: 2px solid white;
+    width: 25%;
+    color: white;
+    text-align:center;
+    margin:0.5rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: width 2s;
+}
+.logos:hover{
+    background-color: rgba(0, 0, 0, 0.307);
+    width:75%;
+}
+#head{
     color:white;
     font-size: 3rem;
-    margin-top: 40%;
+    margin: 5% 0;
     text-align: center;
 }
 
@@ -31,14 +53,17 @@ body {
 }
 
 .container input {
-    width: 90%;
-    padding: 0.6rem;
+    width: 95%;
+    padding: 0.7rem 0 0;
 }
 
 .container {
     display: flex;
     width: 100%;
     margin-bottom: 1rem;
+}
+input[type=radio]{
+   accent-color: #a331ef;
 }
 
 .item2 input,
@@ -50,7 +75,7 @@ select,
 }
 input,
 select {
-    padding: 0.5rem 0;
+    padding: 0.6rem 0 0;
     border: none;
     border-bottom: 1px solid black;
 }
@@ -69,7 +94,7 @@ select {
     width: 100%;
     padding: 0.7rem 0rem;
     margin: 1rem 0.5rem 0 0px;
-    background-color: #f34ce6;
+    background-color: #b042e8;
     border: none;
     border: 2px solid purple;
     border-radius: 5px;
@@ -77,50 +102,164 @@ select {
 }
 
 .rs:hover {
-    background-color: #d127c2;
+    background-color: #9f37d2;
 
 }
 .displayerror{
     color: red;
     font-size: small;
-    /* margin-top: -2rem; */
+ }
+input:focus{
+    outline: none;
 }
+footer{
+    display: none;
+}
+footer {
+    background-color: black;
+}
+
+#lefty {
+    color: white;
+    float: right;
+    margin: 20px 33px;
+}
+
+#fb {
+    margin: 8px 0px;
+}
+
+.fo {
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 1rem;
+}
+
+#lefty:hover {
+    animation-name: colorchange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.fo:hover {
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes grow {
+    from {
+        font-size: 200%;
+    }
+
+    to {
+        font-size: 250%;
+        margin: 0.5rem;
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        color: white;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: red;
+    }
+
+    100% {
+        color: yellow;
+    }
+}
+
+
+/**************************************/
+
 @media screen and (max-width: 994px) {
     .itemg{
         margin: 1.3rem 2rem 2rem 0.5rem;
     }
-    #itema div {
+    #head {
         font-size: 2.5rem;
     }
+   
 }
+
+@media screen and (max-width:908px){
+    .logos {
+        width: 31%;
+      padding: 0.5rem;
+  }
+}
+
 @media screen and (max-width:753px){
     .itemg{
         margin: 1.3rem 0.6rem 2rem 0.5rem;
     }
-    #itema div {
+    #head {
         font-size: 2rem;
     }
-}
+    .logos {
+        width: 40%;
+      padding: 0.5rem;
+  }
+ }
 
 @media screen and (max-width:586px){
     body {
         display: block;
+       background-image: url(/img/bg2.jpg);
+    }
+    footer{
+        display:block;
+    }
+    .logos{
+        display: none;
     }
     #itema {
         width: 100%;
-        
-    }
+      }
     .itemg{
         margin: 1.3rem 2rem 2rem 0.5rem;
     }
-    #itema div{
+    #head{
         margin-top: 0;
         padding: 0.5rem;
     }
     #itemb {
         width: 85%;
+        background-color: white;
+    padding: 4%;
+    border-radius: 10px;
      }
+
+     #lefty {
+        margin: 20px 33px;
+    }
+    .fo {
+        font-size: 1.8rem;
+        margin: 1rem 0.6rem;
+    }  
 }
+
+@media screen and (max-width: 570px){
+    #lefty {
+        margin: 15px 24px;
+    }
+    .fo {
+        font-size: 1.3rem;
+        margin: 1rem 0.6rem;
+    }
+}
+
 @media screen and (max-width:455px){
     #itema div {
         font-size: 1.2rem;
@@ -132,11 +271,22 @@ select {
     input, select {
         padding: 0;}
 }
+
+@media screen and (max-width: 430px) {
+     #lefty {
+        margin: 10px 10px;
+    }
+    .fo {
+        font-size: 1.2rem;
+        margin: 0.7rem 0.4rem;
+    }
+}
+
 @media screen and (max-width:356px){
     .itemg {
         margin: 1.3rem 1rem 2rem 0.5rem;
     }
-    #itema div {
+    #head {
         font-size: 1rem;
     }
 
@@ -144,8 +294,39 @@ select {
     font-size: 1.6rem;
 }
 }
+
+@media screen and (max-width: 320px) {
+    .rs {
+        width: 100%;
+        padding: 0.5rem 0rem;
+        margin: 0rem 0.5rem 0 0px;
+    }
+    #lefty {
+        margin: 10px 10px;
+        font-size: 11px;
+    }
+    #fb {
+        margin: 8px 0px;
+    }
+    .fo {
+        font-size: 1rem;
+        margin: 0.6rem 0.2rem;
+    }
+}
+
 @media screen and (max-width:299px){
     .itemg {
         margin: 1.3rem 0.4rem 2rem 0.2rem;
+    }
+}
+
+@media screen and (max-width:237px){
+    #lefty {
+        margin: 8px 3px;
+        font-size: 10px;
+    }
+    .fo {
+        font-size: 0.9rem;
+        margin: 0.5rem 0.1rem;
     }
 }
