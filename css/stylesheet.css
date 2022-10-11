@@ -18,6 +18,12 @@ body {
     background-image: linear-gradient(blue, #ff5472);
     width: 45%;
 }
+#itema div{
+    color:white;
+    font-size: 3rem;
+    margin-top: 40%;
+    text-align: center;
+}
 
 #itemb {
     width: 40%;
@@ -78,4 +84,68 @@ select {
     color: red;
     font-size: small;
     /* margin-top: -2rem; */
+}
+@media screen and (max-width: 994px) {
+    .itemg{
+        margin: 1.3rem 2rem 2rem 0.5rem;
+    }
+    #itema div {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:753px){
+    .itemg{
+        margin: 1.3rem 0.6rem 2rem 0.5rem;
+    }
+    #itema div {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:586px){
+    body {
+        display: block;
+    }
+    #itema {
+        width: 100%;
+        
+    }
+    .itemg{
+        margin: 1.3rem 2rem 2rem 0.5rem;
+    }
+    #itema div{
+        margin-top: 0;
+        padding: 0.5rem;
+    }
+    #itemb {
+        width: 85%;
+     }
+}
+@media screen and (max-width:455px){
+    #itema div {
+        font-size: 1.2rem;
+    }
+    .heading {
+        margin-bottom: 2rem;
+            font-size: 2rem;
+    }
+    input, select {
+        padding: 0;}
+}
+@media screen and (max-width:356px){
+    .itemg {
+        margin: 1.3rem 1rem 2rem 0.5rem;
+    }
+    #itema div {
+        font-size: 1rem;
+    }
+
+.heading {
+    font-size: 1.6rem;
+}
+}
+@media screen and (max-width:299px){
+    .itemg {
+        margin: 1.3rem 0.4rem 2rem 0.2rem;
+    }
 }

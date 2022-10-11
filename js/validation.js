@@ -6,8 +6,7 @@ function validate(){
     var d=false;
     var e=false;
     var f=false;
-    console.log(a);
-    // comsole.log(c);
+
     clearerror();
     let fname=document.getElementById("First_Name").value;
     let lname=document.getElementById("Last_Name").value;
@@ -15,6 +14,8 @@ function validate(){
     let email=document.getElementById("Email_Address").value;
     let pass=document.getElementById("Password").value;
     let cpass=document.getElementById("C_Password").value;
+    let cours=document.getElementById('course').value;
+    
  
     let mobilereg=/^\d{10}$/;
     let fnamereg=/^[a-zA-Z]+$/;
@@ -84,7 +85,12 @@ function validate(){
 }
 
 
- if(a&&b&&c&&d&&e&&f){
+if(a&&b&&c&&d&&e&&f){
+    console.log(fname);
+    console.log(lname);
+    console.log(mobile);
+    console.log(email);
+    console.log(cours);
     y=true;
     return y;
  }
@@ -97,4 +103,5 @@ function clearerror(){
     }
 }
 return y;
+
 }
