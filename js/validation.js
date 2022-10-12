@@ -5,11 +5,10 @@ var c = false;
 var d = false;
 var e = false;
 var f = false;
-
 document.getElementById('First_Name').addEventListener("blur", () => {
 
     let fname = document.getElementById("First_Name").value;
-    let fnamereg = /^[a-zA-Z]+$/;
+    let fnamereg = /^[a-zA-Z ]+$/;
 
     if (fnamereg.test(fname)) {
         a = true;
