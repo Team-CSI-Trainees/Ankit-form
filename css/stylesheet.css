@@ -217,7 +217,7 @@ footer {
 @media screen and (max-width:586px){
     body {
         display: block;
-       background-image: url(/img/bg2.jpg);
+       background-image: url(../img/bg2.jpg);
     }
     footer{
         display:block;
